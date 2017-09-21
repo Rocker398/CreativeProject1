@@ -1,0 +1,39 @@
+<html>
+	<head>
+		<script type="text/javascript" src="support_files/script.js?dts=20170921"></script>
+		<link rel="stylesheet" type="text/css" href="main.css?dts=20170921">
+	</head>
+	<body>
+		<div id="HomeTeam">
+			<h3 id="HomeTeamName">Gryffindor</h3>
+			<h4 id="HomeTeamPoints">Points: <span>0</span></h4>
+		</div>
+		<div id="AwayTeam">
+			<h3 id="AwayTeamName">Slytherin</h3>
+			<h4 id="AwayTeamPoints">Points: <span>0</span></h4>
+		</div>
+		<div id="overlay">
+			<div id="instructions_StartGame">
+				<div id = "header">
+				<h1>Welcome to Quidditch</h1>
+				</div>
+				<div><h3 id="toDo">Choose your team: </h3> </div>
+				<div id="houses">
+					<button id="gryff" onclick="chooseTeam(this, 1);" data-color="A80808">Gryffindor</button>
+					<button id="slyth" onclick="chooseTeam(this, 2);"data-color="199107">Slytherin</button>
+					<button id="raven" onclick="chooseTeam(this, 3);"data-color="0C55CC">Ravenclaw</button>
+					<button id="huff" onclick="chooseTeam(this, 4);"data-color="C6B305">Hufflepuff</button>
+				</div>
+			</div>
+		</div>
+		<div id="GameOver">
+			<div id="instructions_EndGame">
+				<h1 id="WinningTeam">Gryffindor Wins!</h1>
+				<span id="WinningPoints">Points: <span>150</span></span><br/>
+				<button id="resetGame" onclick="resetGame();">Reset Game</button>
+			</div>
+		</div>
+		<div id="goldenSnitch" onmouseover="moveSnitch();" onclick="catchSnitch();"></div>
+		
+	</body>
+</html>
